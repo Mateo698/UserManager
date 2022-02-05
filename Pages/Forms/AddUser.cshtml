@@ -1,0 +1,15 @@
+﻿@page
+@model UserManager.Pages.Forms.AddUserModel
+
+@{
+	ViewData["Title"] = "Add User";
+}
+<h1>Add Userssss</h1>
+<form method="post">
+	<input type="text" asp-for="User.userName" placeholder="Username"/><br />
+	<input type="password" asp-for="User.password" placeholder="Password"/><br />
+	<input type="text" asp-for="User.firstName" placeholder="First name"/><br />
+	<input type="text" asp-for="User.lastName" placeholder="Last name"/><br />
+	<input type="text" asp-for="User.birthdate" placeholder="Birthday"/><br />
+	<button type="submit">Submit </button>
+</form>
